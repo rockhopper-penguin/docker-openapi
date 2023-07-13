@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  redoc:
+    container_name: redoc
+    build: .
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true
+    command: /bin/sh
